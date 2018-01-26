@@ -12,7 +12,7 @@ def initialize(name)
 end
 
 def self.new_by_filename(filename)
-  filename.split("-")[1] = Song.new
+  filename.split("-")[1] = Song.new(filename)
 end
 
 end
