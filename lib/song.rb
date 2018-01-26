@@ -11,8 +11,9 @@ def initialize(name)
   @name = name
 end
 
-def self.new_by_filename(filename)
-  filename.split("-")[1] = self.new(filename)
+def self.new_by_filename(file_name)
+  song = self.new(file_name)
+  song.name = file_name.split("-")[1]
 end
 
 end
